@@ -38,11 +38,11 @@ palindrome(m)
 
 /*3.Write a function that takes an array of numbers and returns the largest number.*/
 /*let arr=[7,8,9,6,54,12,66,99,74]
-function largest(arr){
-    let max=arr[0]
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>max)
-            max=arr[i]
+function largest(a){
+    let max=a[0]
+    for(let i=0;i<a.length;i++){
+        if(a[i]>max)
+            max=a[i]
     }
     return max
 }
@@ -50,6 +50,22 @@ console.log(largest(arr)) */
 
 /*4.Write a function that takes a string and returns an object with each character as a key and its number of occurrences as the value.*/
 
+let val = "hello world";
+function keyvaluepair(str) {
+    let chars = {};
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (chars[char]) {
+        chars[char]++;
+        } 
+        else {
+        chars[char] = 1;
+    }
+}
+return chars;
+}
+
+console.log(keyvaluepair(val));
 
 /*5.Write a function that takes a string and returns the longest word in the string.*/
 /*let str="Hello Mr BharaniDharan"
@@ -79,10 +95,25 @@ console.log(factorial(x))
 */
 
 /*7.Write a function that converts a temperature from Celsius to Fahrenheit.*/
-let c=30
+
+/*let c=30
 function celsius_to_Fareheit(c){
     return (c*9/5)+32
 }
 console.log(celsius_to_Fareheit(c)) 
+*/
 
 /*8.Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.*/
+/*let a = [0, 1, 2, 3, 4, 5];
+function missing(nums) {
+    let n = nums.length;
+    let se = (n * (n + 1)) / 2;
+    for (let i = 0; i < nums.length; i++) { 
+        se -= nums[i];
+    }
+    return se;
+}
+
+
+console.log(missing(a));
+*/
