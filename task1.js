@@ -35,3 +35,17 @@ let m="Hello Everyone"
 palindrome(x)
 palindrome(m)
 */
+
+/*3.Write a function that takes an array of numbers and returns the largest number.*/
+let arr=[7,8,9,6,54,12,66,99,74]
+function largest(arr){
+    let max=arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>max)
+            max=arr[i]
+    }
+    return max
+}
+console.log(largest(arr))
+
+/*4.Write a function that takes a string and returns an object with each character as a key and its number of occurrences as the value.*/
