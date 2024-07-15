@@ -51,10 +51,21 @@ console.log(largest(arr)) */
 /*4.Write a function that takes a string and returns an object with each character as a key and its number of occurrences as the value.*/
 
 
-
+/*5.Write a function that takes a string and returns the longest word in the string.*/
+/*let str="Hello Mr BharaniDharan"
+function longest(s){
+    let a=s.split(" ")
+    let max=a[0]
+    for(let i=0;i<a.length;i++){
+        if(a[i].length>max.length)
+            max=a[i]
+    }
+    return max
+}
+console.log(longest(str)) */
 
 /*6.Write a function that takes a number as input and returns its factorial.*/
-
+/*
 let x=5
 function factorial(x){
     let val=1
@@ -65,3 +76,13 @@ function factorial(x){
     }
 
 console.log(factorial(x))
+*/
+
+/*7.Write a function that converts a temperature from Celsius to Fahrenheit.*/
+let c=30
+function celsius_to_Fareheit(c){
+    return (c*9/5)+32
+}
+console.log(celsius_to_Fareheit(c)) 
+
+/*8.Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.*/
