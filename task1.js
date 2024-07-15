@@ -37,7 +37,7 @@ palindrome(m)
 */
 
 /*3.Write a function that takes an array of numbers and returns the largest number.*/
-let arr=[7,8,9,6,54,12,66,99,74]
+/*let arr=[7,8,9,6,54,12,66,99,74]
 function largest(arr){
     let max=arr[0]
     for(let i=0;i<arr.length;i++){
@@ -46,6 +46,22 @@ function largest(arr){
     }
     return max
 }
-console.log(largest(arr))
+console.log(largest(arr)) */
 
 /*4.Write a function that takes a string and returns an object with each character as a key and its number of occurrences as the value.*/
+
+
+
+
+/*6.Write a function that takes a number as input and returns its factorial.*/
+
+let x=5
+function factorial(x){
+    let val=1
+    for (let i=1;i<=x;i++){
+        val*=i
+    }
+    return val
+    }
+
+console.log(factorial(x))
